@@ -4,7 +4,12 @@ def say_hi():
     print("Welcome")
 
 def new_client():
-    pass
+    new_client = input("...Please enter name of new client. ")
+    if not new_client in fM.get_clients():
+        fM.add_client(new_client)
+        print("Client added !")
+    else:
+        print("Client already exist !")
     
 def new_transaction():
     bank_clients = fM.clientlists()
