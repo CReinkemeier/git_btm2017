@@ -1,6 +1,7 @@
 import file_manager as fM
 
 def say_hi():
+    print("Welcome")
 
 def new_client():
     pass
